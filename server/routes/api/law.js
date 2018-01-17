@@ -30,7 +30,7 @@ router.post('/addlaw', cors(), function(req, res){
 });
 
 router.get('/getlaw', cors(), function(req, res){
-    if(req.params.id !== null){
+    if(req.query.id !== null){
         Law.findById({_id:req.params.id},
         function(err, doc){
             if(err) return res.status(500).send("error database findById");
