@@ -13,11 +13,13 @@ router.post('/addlaw', cors(), function(req, res){
         if(err) return res.status(500).send("error with database" + err);
         else if(!doc){
             Law.create({
+                lawId: md5(req.body.number),
                 tittle: req.body.tittle,
                 subtittle: req.body.subtittle,
-                content: req.body.content,
+                number: req.body.number,
                 description: req.body.description,
                 organization: req.body.organization,
+                content: req.body.content,
                 time: req.body.time
             }, function(error, result){
                 if(error) return res.status(500).send(error);
@@ -30,7 +32,7 @@ router.post('/addlaw', cors(), function(req, res){
 
 router.get('/getlaw', cors(), function(req, res){
     if(req.query.id !== null){
-        Law.findById({_id:req.params.id},
+        Law.findById({lawId:req.query.id},
         function(err, doc){
             if(err) return res.status(500).send("error database findById");
             return res.status(200).send(doc);
@@ -38,7 +40,7 @@ router.get('/getlaw', cors(), function(req, res){
     }
     else{
         Law.find({}, function(err, doc){
-            if(err) return res.status(500).send("error database findById");
+            if(err) return res.status(500).send("error database find");
             return res.status(200).send(doc); 
         })
     }
@@ -53,10 +55,10 @@ router.delete('/deletelaw', cors(), function(req, res){
 })
 
 router.put('/updatelaw', cors(), function(req, res){
-    Law.findOneAndUpdate({number: req.body.number},{
+    Law.findOneAndUpdate({number: req.body.lawId},{
         tittle: req.body.tittle,
         subtittle: req.body.subtittle, 
-        content: req.body.content,
+        number: req.body.number,
         description: req.body.description,
         organization: req.body.organization,
         time: req.body.time},

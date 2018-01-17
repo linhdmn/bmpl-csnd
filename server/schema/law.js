@@ -1,8 +1,7 @@
 var mongoose = require('mongoose');  
 var LawSchema = new mongoose.Schema({
-    number:{
-        type: String,
-        unique: true,
+    lawId:{
+        type: Number,
         required: true
     },
     tittle:{
@@ -10,10 +9,11 @@ var LawSchema = new mongoose.Schema({
         required: true,
     },
     subtittle:{
-        type: String
-    },
-    content:{
         type: String,
+        required: true
+    },
+    number:{
+        type: Number,
         required: true
     },
     description:{
@@ -21,6 +21,10 @@ var LawSchema = new mongoose.Schema({
     },
     organization:{
         type: String,
+        required: true
+    },
+    content:{
+        type: Array,
         required: true
     },
     time:{
