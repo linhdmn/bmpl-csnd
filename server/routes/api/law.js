@@ -61,6 +61,7 @@ router.put('/updatelaw', cors(), function(req, res){
         number: req.body.number,
         description: req.body.description,
         organization: req.body.organization,
+        content: req.body.content,
         time: req.body.time},
     function(err, doc){
         if(err) return res.status(500).send("error with database");
