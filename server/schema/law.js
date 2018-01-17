@@ -2,6 +2,11 @@ import { Stream } from 'stream';
 
 var mongoose = require('mongoose');  
 var LawSchema = new mongoose.Schema({
+    number:{
+        type: String,
+        unique: true,
+        required: true
+    },
     tittle:{
         type: String,
         required: true,
