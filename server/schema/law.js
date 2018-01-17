@@ -1,5 +1,3 @@
-import { Stream } from 'stream';
-
 var mongoose = require('mongoose');  
 var LawSchema = new mongoose.Schema({
     number:{
@@ -15,7 +13,7 @@ var LawSchema = new mongoose.Schema({
         type: String
     },
     content:{
-        type: Text,
+        type: String,
         required: true
     },
     description:{

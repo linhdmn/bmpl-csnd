@@ -1,5 +1,4 @@
 var express = require('express');
-var request = require('request');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var md5 = require('md5');

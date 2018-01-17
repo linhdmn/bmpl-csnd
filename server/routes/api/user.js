@@ -65,6 +65,13 @@ router.post('/register',cors(),function (req, res) {
         });
 });
 
+router.get('/', function(req, res){
+    User.find({}, function(err, docs){
+        if(err) return res.status(500).send("error with databse");
+        return res.status(200).send(docs);
+    })
+})
+
 
 
 module.exports = router;
