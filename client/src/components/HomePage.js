@@ -35,7 +35,10 @@ const HomePage = (props) =>{
 
                 </div>
             </div>
-            
+            <div className='row'> BỘ LUẬT HÌNH SỰ</div>
+            <div className='row'>
+            <span><a href="#Phan_nhất_Chuong_I" class="a_chuong">Chương I</a></span><ul><li class="dieu"><a href="#Phan_nhất_Chuong_I_Dieu_1" class="a_dieu" title="Nhiệm vụ của Bộ luật hình sự">Điều 1</a></li><li class="dieu"><a href="#Phan_nhất_Chuong_I_Dieu_2" class="a_dieu" title="Cơ sở của trách nhiệm hình sự">Điều 2</a></li><li class="dieu"><a href="#Phan_nhất_Chuong_I_Dieu_3" class="a_dieu" title="Nguyên tắc xử lý">Điều 3</a></li><li class="dieu"><a href="#Phan_nhất_Chuong_I_Dieu_4" class="a_dieu" title="Trách nhiệm phòng ngừa và đấu tranh chống tội phạm">Điều 4</a></li></ul>
+            </div>
         </div>
     )
 }
