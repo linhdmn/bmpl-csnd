@@ -8,8 +8,6 @@ import rootReducer from './reducers';
 import {createLogger} from 'redux-logger';
 import {Provider} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
-import Loginform from './components/LoginForm';
-import Login from './containers/Login'
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const loggerMiddleware = createLogger();

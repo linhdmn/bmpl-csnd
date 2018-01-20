@@ -13,14 +13,11 @@ const Admin = (props)=>{
         props.history.push('/login');
         return null;
     }
-    
-    
-
 
     return(
-        <p>
+        <div>
             adminpage
-        </p>
+        </div>
     )
 }
 export default Admin

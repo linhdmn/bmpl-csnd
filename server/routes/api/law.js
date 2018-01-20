@@ -31,10 +31,10 @@ router.post('/addlaw', cors(), function(req, res){
 });
 
 router.get('/getlaw', cors(), function(req, res){
-    if(req.query.id !== null){
-        Law.findById({lawId:req.query.id},
+    if(req.query.tittle !== null){
+        Law.find({tittle:{"$regex":req.query.tittle, "$options":"i"}},
         function(err, doc){
-            if(err) return res.status(500).send("error database findById");
+            if(err) return res.status(500).send("error database findOne tittle");
             return res.status(200).send(doc);
         })
     }

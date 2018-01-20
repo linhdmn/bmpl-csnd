@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import {postLogin, logoutTodo} from '../actions/indexActions'
+import {postLogin, logoutTodo,getAllLaw} from '../actions/indexActions'
 import LoginForm from '../components/LoginForm'
 
 const mapStateToProps = state =>{
@@ -12,7 +12,8 @@ const mapStateToProps = state =>{
 };
 const mapDispatchToProps = dispatch =>{
     return{
-        Login : (data) => dispatch(postLogin(data))
+        Login : (data) => dispatch(postLogin(data)),
+        getLaw: (data) => dispatch(getAllLaw(data)),
     }
 }
 

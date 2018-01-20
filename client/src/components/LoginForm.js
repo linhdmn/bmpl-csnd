@@ -29,7 +29,15 @@ const LoginForm =(props)=> {
     }
     else {
         return (
-            <div className="row login-form" style={{'textAlign':'center'}}>
+            <div className="row" 
+            style={{
+                'textAlign':'center',
+                'position': 'fixed',
+                'top': '50%',
+                'left': '50%',
+                'marginTop': '-200px',
+                'marginLeft': '-200px',
+                }}>
                 <Form onSubmit={(e) => {
                     e.preventDefault();
                     hideInfo();
@@ -39,7 +47,7 @@ const LoginForm =(props)=> {
                     };
                     props.Login(data);
                 }}>
-                    <div>
+                    <div className="col">
                         <div className="card" style={{'width': '350px'}}>
                             <div className="card-header text-center" >
                                 <h1><b>Login</b></h1>

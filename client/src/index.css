@@ -2,4 +2,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  /* background-image: url("http://img.thuviendohoa.vn/items/trong-dong-dong-son-vector-trong-dong-vector-1231.jpg"); */
+  /* background-color: #293a46; */
+  background-color: #ffffff;
+}
+
+/* https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg */
+/* http://img.thuviendohoa.vn/items/trong-dong-vector-trong-dong-dong-son-vector-1221.jpg */
+.anyClass {
+  height:500px;
+  overflow-y: scroll;
+}
+.footer{
+  background-color: #293a46;
 }

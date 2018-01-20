@@ -20,9 +20,8 @@ router.post('/login',cors(), function(req, res){
                 res.status(200).send({
                     message  : "Login successfully!",
                     user : {
-                        userID: user.i_id,
+                        userID: user._id,
                         email: user.email,
-                        password: user.password,
                         role: user.role
                     }
                 });

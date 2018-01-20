@@ -2,9 +2,13 @@ import React from 'react'
 
 const Topbar = () =>{
     return(
-        <div className="Header">
-            <div className="card" >
-                <div className="card-body" style={{'textAlign':'center'}}>
+        <div className="Header "style={{
+        'top': '0',
+        'right':'0',
+        'padding':'0px',
+        }}>
+            <div className="card text-white footer" >
+                <div className="card-body" style={{'textAlign':'center','width':'100%'}}>
                     <h5 className="card-title">BỘ MÔN PHÁP LUẬT</h5>
                     <p className="card-text">Công cụ nghiên cứu bộ luật hình sự và bộ luật tố tụng hình sự</p>
                 </div>
@@ -25,12 +29,6 @@ const Topbar = () =>{
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="Side">
-                <ul className="nav navbar-nav ml-auto">
-                    
-                </ul>
             </div>
         </div>
     )
