@@ -9,10 +9,16 @@ body {
 
 /* https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg */
 /* http://img.thuviendohoa.vn/items/trong-dong-vector-trong-dong-dong-son-vector-1221.jpg */
-.anyClass {
+/* .anyClass {
   height:500px;
   overflow-y: scroll;
-}
+} */
 .footer{
   background-color: #293a46;
+}
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }

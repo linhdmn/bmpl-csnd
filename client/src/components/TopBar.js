@@ -13,7 +13,7 @@ const Topbar = () =>{
                     <p className="card-text">Công cụ nghiên cứu bộ luật hình sự và bộ luật tố tụng hình sự</p>
                 </div>
             </div>
-            <div className="navbar navbar-expand-lg bg-success justify-content-between">
+            <div className=" navbar navbar-expand-lg bg-success justify-content-between">
                 <div className="btn-group">
                     <button type="button" className="btn btn-success">Trang chủ</button>
                     <button type="button" className="btn btn-success">Văn bản mới</button>
