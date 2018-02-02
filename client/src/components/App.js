@@ -23,7 +23,7 @@ const App = () =>(
         <Route exact path="/dashboard/content" component = {Dashboard} history={history}/>
       </Switch>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
   

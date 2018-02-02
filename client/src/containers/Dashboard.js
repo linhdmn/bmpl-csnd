@@ -5,6 +5,7 @@ import homePage from '../components/HomePage'
 const mapStateToProps = state => {
     console.log(state);
     return {
+        role: state.accountInfo.role,
         lawId: state.homePage.lawId,
         tittle: state.homePage.tittle,
         subtittle: state.homePage.subtittle,

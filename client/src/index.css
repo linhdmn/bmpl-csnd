@@ -1,10 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 56px;
   font-family: sans-serif;
   /* background-image: url("http://img.thuviendohoa.vn/items/trong-dong-dong-son-vector-trong-dong-vector-1231.jpg"); */
   /* background-color: #293a46; */
-  background-color: #ffffff;
+  background-color: #f8f9fa;
 }
 
 /* https://wallpapertag.com/wallpaper/full/1/a/1/350829-widescreen-website-background-1920x1080-windows-xp.jpg */
@@ -22,3 +23,28 @@ body {
   right: 0;
   width: 100%;
 }
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
